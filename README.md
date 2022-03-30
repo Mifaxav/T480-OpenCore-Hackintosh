@@ -1,6 +1,6 @@
 # T480-OpenCore-Hackintosh
 
-**Status: Unmaintained**
+**Status: Maintained**
 
 Sorry, I no longer use macOS on my T480. If a maintained fork is formed, it will be listed here
 
@@ -71,7 +71,7 @@ If you find this bootloader configuration useful, consider giving it a star to m
 
 | Kext                   | Version        |
 |:---------------------- | -------------- |
-| AirportItlwm           | 1.3.0          |
+| AirportItlwm           | 2.1.0          |
 | AppleALC               | 1.6.0          |
 | BrightnessKeys         | 1.0.1          |
 | CPUFriend              | 1.2.3          |
@@ -329,7 +329,7 @@ Problems with recreating new `en` device every time are now solved on latest mac
 
 - [x] Web camera
 
-- [x] Wifi - Intel Wireless-AC 8265 `Use HeliPort app for Wi-Fi control`
+- [x] Wifi - Intel Wireless-AC 8265 `Now works natively with macos big sur and kext upgraded to 2.1.0 for better stabillity`
 
 - [x] DRM `Widevine, validated on Firefox 82. WhateverGreen's DRM is broken on Big Sur`
 
@@ -338,6 +338,8 @@ Problems with recreating new `en` device every time are now solved on latest mac
 <details>  
 
 <summary><strong>What's not working ⚠️</strong></summary>
+    
+- [ ] Laggy Audio Jack  `Temporary fix ~ plug in the headphones, open the midi application and keep master 2 to 0/mute and remember to keep the sys pref sound tab open (can be minimised)`
 
 - [ ] Fingerprint reader  `There is finally after many years working driver for Linux (python-validity), don't expect macOS driver any time soon.`
 
