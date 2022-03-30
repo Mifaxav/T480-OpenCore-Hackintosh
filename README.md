@@ -2,6 +2,8 @@
 
 **Status: Maintained**
 
+Master doesnt have much, check the releases :D
+
 <img align="right" src="./Other/README_Resources/ThinkPad.gif" alt="T480 macOS" width="430">
 
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.9-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
