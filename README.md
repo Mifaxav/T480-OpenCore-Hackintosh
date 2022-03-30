@@ -1,9 +1,6 @@
 # T480-OpenCore-Hackintosh
 
-**Status: Unmaintained**
-
-Sorry, I no longer use macOS on my T480. If a maintained fork is formed, it will be listed here
-
+**Status: Maintained**
 
 <img align="right" src="./Other/README_Resources/ThinkPad.gif" alt="T480 macOS" width="430">
 
@@ -303,7 +300,7 @@ Problems with recreating new `en` device every time are now solved on latest mac
 
 - [x] GPU UHD 620 hardware acceleration / performance 
 
-- [x] HDMI `Closed and opened lid. With audio.`
+- [x] HDMI `Closed lid. With audio.`
 
 - [x] iMessage, FaceTime, App Store, iTunes Store. **Generate your own SMBIOS**
 
@@ -329,7 +326,7 @@ Problems with recreating new `en` device every time are now solved on latest mac
 
 - [x] Web camera
 
-- [x] Wifi - Intel Wireless-AC 8265 `Use HeliPort app for Wi-Fi control`
+- [x] Wifi - Intel Wireless-AC 8265 `works natively with big sur`
 
 - [x] DRM `Widevine, validated on Firefox 82. WhateverGreen's DRM is broken on Big Sur`
 
@@ -338,6 +335,12 @@ Problems with recreating new `en` device every time are now solved on latest mac
 <details>  
 
 <summary><strong>What's not working ⚠️</strong></summary>
+    
+- [ ] HDMI  `works with closed lid but open lid makes the hdmi monitor switch to a greenish tinge`
+    
+- [ ] Audio Jack  `temporary fix is to decrease master 2 in midi application while headphones plugged in and keep sound tab in sys pref open and minimised`
+    
+- [ ] WIFI  `Most of it works but MIGHT still be buggy. If any bugs please create a new issue`
 
 - [ ] Fingerprint reader  `There is finally after many years working driver for Linux (python-validity), don't expect macOS driver any time soon.`
 
