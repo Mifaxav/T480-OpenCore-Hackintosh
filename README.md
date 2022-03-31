@@ -328,7 +328,7 @@ Problems with recreating new `en` device every time are now solved on latest mac
 
 - [x] Web camera
 
-- [x] Wifi - Intel Wireless-AC 8265 `works natively with big sur`
+- [x] Wifi - Intel Wireless-AC 8265 `works using heliport and itlwm with big sur`
 
 - [x] DRM `Widevine, validated on Firefox 82. WhateverGreen's DRM is broken on Big Sur`
 
