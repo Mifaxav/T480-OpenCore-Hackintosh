@@ -361,7 +361,19 @@ Problems with recreating new `en` device every time are now solved on latest mac
 
 - [ ] Thunderbolt  `No device to test.`
 
-</details>  
+</details>
+
+<summary><strong>Post-Install</strong></summary>
+This part has been copied from Tienhyun5312
+
+Audio jack
+
+If you have audio glitchy after plug your headphone jack, use this.
+
+Go to releases and find fixes release.
+Go into alc_fix folder, run install.sh and reboot.
+
+</details>
 
 ## UEFI modding
 
