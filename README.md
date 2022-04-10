@@ -338,9 +338,9 @@ Problems with recreating new `en` device every time are now solved on latest mac
 
 <summary><strong>What's not working ⚠️</strong></summary>
     
-- [ ] HDMI  `works with closed lid but open lid makes the hdmi monitor switch to a greenish tinge`
+- [ ] HDMI  `Works seamlessly but there is still a sleep problem to solve regarding the same`
     
-- [ ] Audio Jack  `temporary fix is to decrease master 2 in midi application while headphones plugged in and keep sound tab in sys pref open and minimised`
+- [ ] Audio Jack  `temporary fix is to decrease master 2 in midi application while headphones plugged in and keep sound tab in sys pref open and minimised. The update to oc 0.7.3 atleast allowed audio jack and bluetooth mic's to work 🙄`
     
 - [ ] WIFI  `Most of it works but MIGHT still be buggy. If any bugs please create a new issue`
 
@@ -349,8 +349,6 @@ Problems with recreating new `en` device every time are now solved on latest mac
 - [ ] PM 981 `Still unstable. Could work for some, not for others.`
 
 - [ ] Sidecar wireless `If you want to use this feature, buy a compatible Broadcom card!`
-
-- [ ] Windows/Linux from OC boot menu `It's best practice to not boot from OC when planning to perform firmware upgrade`
 
 
 </details>  
