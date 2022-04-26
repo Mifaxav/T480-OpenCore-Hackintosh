@@ -4,6 +4,8 @@
 
 Master doesnt have much, check the releases :D
 
+Even if it shows a release which was released a long time ago, please check the same as i release pre releases which dont show up.
+
 <img align="right" src="./Other/README_Resources/ThinkPad.gif" alt="T480 macOS" width="430">
 
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.9-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
