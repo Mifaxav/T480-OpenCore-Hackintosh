@@ -2,19 +2,20 @@
 
 **Status: Maintained**
 
-Highest supported OS: Macos 12.4
+Highest supported OS: Macos 13.3.1 Ventura
 
 Master doesnt have much, check the releases :D
 
-Even if it shows a release which was released a long time ago, please check the same as i release pre releases which dont show up.
+Even if it shows a release which was released a long time ago, please check the above as I release pre releases which dont show up.
 
 <img align="right" src="./Other/README_Resources/ThinkPad.gif" alt="T480 macOS" width="430">
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.9-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.3-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
 [![macOS-Previous](https://img.shields.io/badge/macOS-10.14.6-brightgreen.svg)](https://github.com/EETagent/T480-OpenCore-Hackintosh/issues/11)
 [![macOS-Stable](https://img.shields.io/badge/macOS-10.15.7-brightgreen.svg)](https://www.apple.com/macos/catalina/)
-[![macOS-Unstable](https://img.shields.io/badge/macOS-11.6-blue.svg)](https://www.apple.com/macos/big-sur)
-[![macOS-Unstable](https://img.shields.io/badge/macOS-12.4-purple.svg)](https://www.apple.com/macos/monterey)
+[![macOS-stable](https://img.shields.io/badge/macOS-11.6-blue.svg)](https://www.apple.com/macos/big-sur)
+[![macOS-stable](https://img.shields.io/badge/macOS-12.4-purple.svg)](https://www.apple.com/macos/monterey)
+[![macOS-stable](https://img.shields.io/badge/macOS-13.3.1-yellow.svg)](https://www.apple.com/macos/ventura)
 
 **DISCLAIMER:**
 Read the entire README and Dortania guides before you start. I am not responsible for any damage.
