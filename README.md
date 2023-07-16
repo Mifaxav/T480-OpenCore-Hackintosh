@@ -76,15 +76,15 @@ If you find this bootloader configuration useful, consider giving it a star to m
 
 | Kext                   | Version        |
 |:---------------------- | -------------- |
-| AirportItlwm           | 1.3.0          |
+| AirportItlwm           | 1.3.0 (Intel cards only)         
 | AppleALC               | 1.6.0          |
 | BrightnessKeys         | 1.0.1          |
 | CPUFriend              | 1.2.3          |
 | CPUFriendDataProvider  | i5-8250U       |
 | HibernationFixup       | 1.4.0          |
 | HoRNDIS                | Disabled, 9.2  |
-| IntelBluetoothFirmware | 1.1.2          |
-| IntelBluetoothInjector | 1.1.2          |
+| IntelBluetoothFirmware | 1.1.2 (Intel cards only)          
+| IntelBluetoothInjector | 1.1.2 (Intel cards only)         
 | IntelMausi             | 1.0.6          |
 | Lilu                   | 1.5.3          |
 | NoTouchID              | 1.0.4          |
@@ -106,10 +106,10 @@ If you find this bootloader configuration useful, consider giving it a star to m
 
 | Driver          | Version           |
 |:---------------:| ----------------- |
-| AudioDxe.efi    | OpenCorePkg 0.6.9 |
+| AudioDxe.efi    | OpenCorePkg 0.7.3 |
 | HfsPlus.efi     | OcBinaryData      |
-| OpenCanopy.efi  | OpenCorePkg 0.6.9 |
-| OpenRuntime.efi | OpenCorePkg 0.6.9 |
+| OpenCanopy.efi  | OpenCorePkg 0.7.3 |
+| OpenRuntime.efi | OpenCorePkg 0.7.3 |
 </details>
 
 <details>
@@ -296,7 +296,9 @@ Problems with recreating new `en` device every time are now solved on latest mac
 
 - [x] Battery percentage
 
-- [x] Bluetooth - Intel Wireless-AC 8265 (0x0A2B) 
+- [x] Bluetooth - Intel Wireless-AC 8265 (0x0A2B)
+
+- [X] Broadcom Bluetooth - All works! 
 
 - [x] Boot chime
 
@@ -316,13 +318,13 @@ Problems with recreating new `en` device every time are now solved on latest mac
 
 - [x] Keyboard `Volume and brightness hotkeys. Another media keys with YogaSMC.`
 
-- [x] Microphone `With keyboard switch using ThinkPad Assistant.`
+- [x] Microphone `With keyboard switch using YogaSMC.`
 
 - [x] Realtek® ALC3287 ("ALC257") Audio
 
 - [x] SD card reader `Fortunately, USB connected.`
 
-- [x] Sidecar wired `Works with 15,2 SMBIOS.`
+- [x] Sidecar wired `Works with 15,2 SMBIOS. Wireless with Broadcom Card`
 
 - [x] Sleep/Wake 
 
@@ -336,6 +338,8 @@ Problems with recreating new `en` device every time are now solved on latest mac
 
 - [x] Wifi - Intel Wireless-AC 8265 `works using heliport and itlwm with big sur`
 
+- [X] Broadcom Wifi - Native broadcom cards work perfectly with all features available wirelessly too
+
 - [x] DRM `Widevine, validated on Firefox 82. WhateverGreen's DRM is broken on Big Sur`
 
 </details>  
@@ -346,13 +350,13 @@ Problems with recreating new `en` device every time are now solved on latest mac
     
 - [ ] Audio Jack  `Everything works except, audio jack line in. The update to oc 0.7.3 atleast allowed audio jack and bluetooth mic's to work 🙄`
     
-- [ ] WIFI  `Most of it works but MIGHT still be buggy. If any bugs please create a new issue`
+- [ ] WIFI  `Most of it works but MIGHT still be buggy. If any bugs please create a new issue`(Broadcom native is stable)
 
-- [ ] Fingerprint reader  `There is finally after many years working driver for Linux (python-validity), don't expect macOS driver any time soon.`
+- [ ] Fingerprint reader  `There is finally after many years working driver for Linux (python-validity), don't expect macOS driver any time soon.` (Able to see it as a synaptics usb device and can be used on an ubuntu vm on macos)
 
-- [ ] PM 981 `Still unstable. Could work for some, not for others.`
+- [ ] PM 981 `Still unstable. Could work for some, not for others.` (Just dont use it :D )
 
-- [ ] Sidecar wireless `If you want to use this feature, buy a compatible Broadcom card!`
+- [ ] Sidecar wireless `If you want to use this feature, buy a compatible Broadcom card!`(Latest release only has drivers       for Broadcom cards)
 
 
 </details>  
