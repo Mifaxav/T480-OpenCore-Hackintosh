@@ -2,7 +2,7 @@
 
 **Status: Maintained**
 
-Highest supported OS: Macos 13.3.1 Ventura
+Highest supported OS: Macos 13.5 Ventura
 
 Master doesnt have much, check the releases :D
 
