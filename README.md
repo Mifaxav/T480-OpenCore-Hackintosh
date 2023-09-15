@@ -2,7 +2,9 @@
 
 **Status: Maintained**
 
-Highest supported OS: Macos 13.5 Ventura
+Supported OS's: Cataline, Big Sur, Monterey, Ventura, Sonoma(Beta)
+
+Highest supported OS: Macos 13.5 Ventura, 14.0 Sonoma Beta
 
 Master doesnt have much, check the releases :D
 
@@ -16,6 +18,7 @@ Even if it shows a release which was released a long time ago, please check the 
 [![macOS-stable](https://img.shields.io/badge/macOS-11.6-blue.svg)](https://www.apple.com/macos/big-sur)
 [![macOS-stable](https://img.shields.io/badge/macOS-12.4-purple.svg)](https://www.apple.com/macos/monterey)
 [![macOS-stable](https://img.shields.io/badge/macOS-13.3.1-yellow.svg)](https://www.apple.com/macos/ventura)
+[![macOS-stable](https://img.shields.io/badge/macOS-14.0(Beta)-forest_green.svg)](https://www.apple.com/macos/sonoma)
 
 **DISCLAIMER:**
 Read the entire README and Dortania guides before you start. I am not responsible for any damage.
@@ -45,13 +48,13 @@ If you find this bootloader configuration useful, consider giving it a star to m
 [![UEFI](https://img.shields.io/badge/UEFI-N24ET61W-lightgrey)](https://pcsupport.lenovo.com/us/en/products/laptops-and-netbooks/thinkpad-t-series-laptops/thinkpad-t480-type-20l5-20l6/downloads/ds502355)
 | Category  | Component                            | Note                                                                                                               |
 | --------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
-| CPU       | Intel Core i5-8250U                  | 20L50000MC                                                                                                         |
+| CPU       | Intel Core i5-8350U                  | 20L50000MC                                                                                                         |
 | GPU       | Intel UHD 620                        |                                                                                                                    |
 | SSD       | Samsung 970 Evo 512GB                | Replaced cursed PM 981 which stil doesn't work reliably                                                            |
 | Memory    | 12GB DDR4 2400Mhz                    |                                                                                                                    |
 | Battery   | Dual battery                         |                                                                                                                    |
 | Camera    | 720p Camera                          |                                                                                                                    |
-| Wifi & BT | Intel Wireless-AC 8265               | Use AirportItlwm for your macOS version and enjoy native Wi-Fi control, or use Heliport app.                        |
+| Wifi & BT | BCM93452Z                            | Use AirportItlwm for your macOS version and enjoy native Wi-Fi control, or use Heliport app. Broadcom is native.   |                     
 | Input     | PS2 Keyboard & Synaptics TrackPad    | [YogaSMC](https://github.com/zhen-zen/YogaSMC) for media keys like microphone switch, etc. PrtSc is mapped as F13. |
 
 </details>  
@@ -63,9 +66,12 @@ If you find this bootloader configuration useful, consider giving it a star to m
 
 | Component      | Version        |
 | -------------- | -------------- |
+| OpenCore       | v0.9.4         |
 | macOS Catalina | 10.15.7 (19H2) |
 | macOS Big Sur  | 11.2.2 (20D80) |
-| OpenCore       | v0.6.9         |
+| macOS Monterey | 12.6.1 (21G217)|
+| macOS Ventura  | 13.5.1 (22G90) |
+| MacOS Sonoma   | 14.0B(23A5328b)|
 
 </details>
 
