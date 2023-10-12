@@ -2,13 +2,13 @@
 
 **Status: Maintained**
 
-Supported OS's: Cataline, Big Sur, Monterey, Ventura, Sonoma(Beta)
+Supported OS's: Cataline, Big Sur, Monterey, Ventura, Sonoma
 
-Highest supported OS: Macos 13.5 Ventura, 14.0 Sonoma Beta
+Highest supported OS: 14.0 Sonoma Beta
 
 Master doesnt have much, check the releases :D
 
-Even if it shows a release which was released a long time ago, please check the above as I release pre releases which dont show up.
+Even if it shows a release released a while ago, please check the releases tab as i frequently upload pre releases which dont show up.
 
 <img align="right" src="./Other/README_Resources/ThinkPad.gif" alt="T480 macOS" width="430">
 
@@ -50,8 +50,8 @@ If you find this bootloader configuration useful, consider giving it a star to m
 | --------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
 | CPU       | Intel Core i5-8350U                  | 20L50000MC                                                                                                         |
 | GPU       | Intel UHD 620                        |                                                                                                                    |
-| SSD       | Samsung 970 Evo 512GB                | Replaced cursed PM 981 which stil doesn't work reliably                                                            |
-| Memory    | 12GB DDR4 2400Mhz                    |                                                                                                                    |
+| SSD       | Silicon Power P34A60 1TB NVMe        | Works perfectly with latest NVMeFix.kext                                                                           |
+| Memory    | 16GB DDR4 2400Mhz                    |                                                                                                                    |
 | Battery   | Dual battery                         |                                                                                                                    |
 | Camera    | 720p Camera                          |                                                                                                                    |
 | Wifi & BT | BCM93452Z                            | Use AirportItlwm for your macOS version and enjoy native Wi-Fi control, or use Heliport app. Broadcom is native.   |                     
@@ -71,7 +71,7 @@ If you find this bootloader configuration useful, consider giving it a star to m
 | macOS Big Sur  | 11.2.2 (20D80) |
 | macOS Monterey | 12.6.1 (21G217)|
 | macOS Ventura  | 13.5.1 (22G90) |
-| MacOS Sonoma   | 14.0B(23A5328b)|
+| MacOS Sonoma   | 14.0 (23A344)  |
 
 </details>
 
@@ -100,6 +100,8 @@ If you find this bootloader configuration useful, consider giving it a star to m
 | VoltageShift           | Disabled, 1.22 |
 | VoodooPS2Controller    | 2.2.3          |
 | VoodooRMI              | 1.3.3          |
+| VoodooI2C              | Latest         |
+| VooDooI2CHID           | Latest         |
 | VoodooSMBus            | 3.0.0          |
 | WhateverGreen          | 1.4.9          |
 | YogaSMC                | 1.4.3          |
@@ -112,10 +114,10 @@ If you find this bootloader configuration useful, consider giving it a star to m
 
 | Driver          | Version           |
 |:---------------:| ----------------- |
-| AudioDxe.efi    | OpenCorePkg 0.7.3 |
+| AudioDxe.efi    | OpenCorePkg 0.9.4 |
 | HfsPlus.efi     | OcBinaryData      |
-| OpenCanopy.efi  | OpenCorePkg 0.7.3 |
-| OpenRuntime.efi | OpenCorePkg 0.7.3 |
+| OpenCanopy.efi  | OpenCorePkg 0.9.4 |
+| OpenRuntime.efi | OpenCorePkg 0.9.4 |
 </details>
 
 <details>
@@ -153,7 +155,7 @@ If you find this bootloader configuration useful, consider giving it a star to m
 **Thunderbolt**
 
 - `Thunderbolt BIOS Assist Mode` **Disabled**
-- `Wake by Thunderbolt(TM) 3` **Disabled**
+- `Wake by Thunderbolt(TM) 3` **Enabled**
 - `Security Level` **User Authorization**
 - `Support in Pre Boot Environment -> Thunderbolt(TM) device` **Enabled**
 
@@ -302,9 +304,9 @@ Problems with recreating new `en` device every time are now solved on latest mac
 
 - [x] Battery percentage
 
-- [x] Bluetooth - Intel Wireless-AC 8265 (0x0A2B)
+- [x] Bluetooth - Intel Wireless-AC 8265 (0x0A2B) (Not maintained in repo)
 
-- [X] Broadcom Bluetooth - All works! 
+- [X] Broadcom Bluetooth - All works! (native) 
 
 - [x] Boot chime
 
@@ -320,7 +322,7 @@ Problems with recreating new `en` device every time are now solved on latest mac
 
 - [x] iMessage, FaceTime, App Store, iTunes Store. **Generate your own SMBIOS**
 
-- [x] Intel I219V Ethernet port
+- [x] Intel I219V Ethernet port `Full 1 Gbps speeds and external eithernet adapter next to TB port also works`
 
 - [x] Keyboard `Volume and brightness hotkeys. Another media keys with YogaSMC.`
 
@@ -332,7 +334,9 @@ Problems with recreating new `en` device every time are now solved on latest mac
 
 - [x] Sidecar wired `Works with 15,2 SMBIOS. Wireless with Broadcom Card`
 
-- [x] Sleep/Wake 
+- [x] Sleep/Wake `Hibernatemode 25 for the best results. `
+
+- [ ] Thunderbolt  `40 Gbps after start and 10 Gbps after sleep wake`
 
 - [x] TouchPad `1-5 fingers swipe works. Emulate force touch using longer and more voluminous touch.`
 
@@ -340,11 +344,11 @@ Problems with recreating new `en` device every time are now solved on latest mac
 
 - [x] USB Ports `USB Map is different for devices with Windows Hello camera.`
 
-- [x] Web camera
+- [x] Web camera `Works well with MacOS with no bugs`
 
 - [x] Wifi - Intel Wireless-AC 8265 `works using heliport and itlwm with big sur`
 
-- [X] Broadcom Wifi - Native broadcom cards work perfectly with all features available wirelessly too
+- [X] Broadcom Wifi - Native broadcom cards work perfectly with all features available wirelessly too. Legacy 
 
 - [x] DRM `Widevine, validated on Firefox 82. WhateverGreen's DRM is broken on Big Sur`
 
@@ -354,26 +358,14 @@ Problems with recreating new `en` device every time are now solved on latest mac
 
 <summary><strong>What's not working ⚠️</strong></summary>
     
-- [ ] Audio Jack  `Everything works except, audio jack line in. The update to oc 0.7.3 atleast allowed audio jack and bluetooth mic's to work 🙄`
-    
-- [ ] WIFI  `Most of it works but MIGHT still be buggy. If any bugs please create a new issue`(Broadcom native is stable)
+- [ ] Intel WIFI  `Most of it works but MIGHT still be buggy (Not Maintained in this repo). If any bugs, check the dortainia guides regarding intel wifi. `(Broadcom native is stable)
 
 - [ ] Fingerprint reader  `There is finally after many years working driver for Linux (python-validity), don't expect macOS driver any time soon.` (Able to see it as a synaptics usb device and can be used on an ubuntu vm on macos)
 
-- [ ] PM 981 `Still unstable. Could work for some, not for others.` (Just dont use it :D )
-
-- [ ] Sidecar wireless `If you want to use this feature, buy a compatible Broadcom card!`(Latest release only has drivers       for Broadcom cards)
+- [ ] Continuity(Intel Cards) `If you want to use this feature, buy a compatible Broadcom card!`(Latest release only has drivers for Broadcom cards)
 
 
 </details>  
-
-<details>  
-
-<summary><strong>Untested</strong></summary>
-
-- [ ] Thunderbolt  `No device to test.`
-
-</details>
 
 <summary><strong>Post-Install</strong></summary>
 This part has been copied from Tienhyun5312
@@ -384,6 +376,8 @@ If you have audio glitchy after plug your headphone jack, use this.
 
 Go to releases and find fixes release.
 Go into alc_fix folder, run install.sh and reboot.
+
+***Issue Fixed on Ventura and above***
 
 </details>
 
