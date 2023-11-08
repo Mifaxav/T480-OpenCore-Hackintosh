@@ -13,12 +13,12 @@ Even if it shows a release released a while ago, please check the releases tab a
 <img align="right" src="./Other/README_Resources/ThinkPad.gif" alt="T480 macOS" width="430">
 
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.7.3-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
-[![macOS-Previous](https://img.shields.io/badge/macOS-10.14.6-brightgreen.svg)](https://github.com/EETagent/T480-OpenCore-Hackintosh/issues/11)
+[![macOS-Previous](https://img.shields.io/badge/macOS-10.14.6-brown.svg)](https://github.com/EETagent/T480-OpenCore-Hackintosh/issues/11)
 [![macOS-Stable](https://img.shields.io/badge/macOS-10.15.7-brightgreen.svg)](https://www.apple.com/macos/catalina/)
 [![macOS-stable](https://img.shields.io/badge/macOS-11.6-blue.svg)](https://www.apple.com/macos/big-sur)
 [![macOS-stable](https://img.shields.io/badge/macOS-12.4-purple.svg)](https://www.apple.com/macos/monterey)
 [![macOS-stable](https://img.shields.io/badge/macOS-13.3.1-yellow.svg)](https://www.apple.com/macos/ventura)
-[![macOS-stable](https://img.shields.io/badge/macOS-14.0(Beta)-forest_green.svg)](https://www.apple.com/macos/sonoma)
+[![macOS-stable](https://img.shields.io/badge/macOS-14.0-forest_green.svg)](https://www.apple.com/macos/sonoma)
 
 **DISCLAIMER:**
 Read the entire README and Dortania guides before you start. I am not responsible for any damage.
@@ -80,31 +80,31 @@ If you find this bootloader configuration useful, consider giving it a star to m
 <summary><strong>Kernel extensions</strong></summary>
 <br>
 
-| Kext                   | Version        |
-|:---------------------- | -------------- |
-| AirportItlwm           | 1.3.0 (Intel cards only)         
-| AppleALC               | 1.6.0          |
-| BrightnessKeys         | 1.0.1          |
-| CPUFriend              | 1.2.3          |
-| CPUFriendDataProvider  | i5-8250U       |
-| HibernationFixup       | 1.4.0          |
-| HoRNDIS                | Disabled, 9.2  |
-| IntelBluetoothFirmware | 1.1.2 (Intel cards only)          
-| IntelBluetoothInjector | 1.1.2 (Intel cards only)         
-| IntelMausi             | 1.0.6          |
-| Lilu                   | 1.5.3          |
-| NoTouchID              | 1.0.4          |
-| NVMeFix                | 1.0.7          |
-| RTCMemoryFixup         | 1.0.8          |
-| VirtualSMC             | 1.2.3          |
-| VoltageShift           | Disabled, 1.22 |
-| VoodooPS2Controller    | 2.2.3          |
-| VoodooRMI              | 1.3.3          |
-| VoodooI2C              | Latest         |
-| VooDooI2CHID           | Latest         |
-| VoodooSMBus            | 3.0.0          |
-| WhateverGreen          | 1.4.9          |
-| YogaSMC                | 1.4.3          |
+| Kext                   | Comment        
+|:---------------------- | ------------------------------
+| AirportItlwm           | Latest(Intel cards only)         
+| AppleALC               | Latest Speakers
+| BrightnessKeys         | Latest         
+| CPUFriend              | Latest CPU power management
+| CPUFriendDataProvider  | Latest i5-8350U
+| HibernationFixup       | Latest         
+| HoRNDIS                | Disabled, 9.2  
+| IntelBluetoothFirmware | Latest (Intel cards only)          
+| IntelBluetoothInjector | Latest (Intel cards only)         
+| IntelMausi             | Latest Ethernet controller
+| Lilu                   | Latest         
+| NoTouchID              | Latest         
+| NVMeFix                | Latest NVMe SSD fix
+| RTCMemoryFixup         | Latest Real time clock fix
+| VirtualSMC             | Latest         
+| VoltageShift           | Disabled, 1.22 
+| VoodooPS2Controller    | Latest         
+| VoodooRMI              | Latest         
+| VoodooI2C              | Latest Touchscreen
+| VooDooI2CHID           | Latest Intel satellite kext
+| VoodooSMBus            | Latest         
+| WhateverGreen          | Latest         
+| YogaSMC                | Latest Lenovo SMC
 
 </details>
 <details>
