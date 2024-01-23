@@ -4,7 +4,7 @@
 
 Supported OS's: Cataline, Big Sur, Monterey, Ventura, Sonoma
 
-Highest supported OS: 14.0 Sonoma Beta
+Highest supported OS: 14.2.1
 
 Master doesnt have much, check the releases :D
 
@@ -18,7 +18,7 @@ Even if it shows a release released a while ago, please check the releases tab a
 [![macOS-stable](https://img.shields.io/badge/macOS-11.6-blue.svg)](https://www.apple.com/macos/big-sur)
 [![macOS-stable](https://img.shields.io/badge/macOS-12.4-purple.svg)](https://www.apple.com/macos/monterey)
 [![macOS-stable](https://img.shields.io/badge/macOS-13.3.1-yellow.svg)](https://www.apple.com/macos/ventura)
-[![macOS-stable](https://img.shields.io/badge/macOS-14.0-forest_green.svg)](https://www.apple.com/macos/sonoma)
+[![macOS-stable](https://img.shields.io/badge/macOS-14.2.1-forest_green.svg)](https://www.apple.com/macos/sonoma)
 
 **DISCLAIMER:**
 Read the entire README and Dortania guides before you start. I am not responsible for any damage.
@@ -71,7 +71,7 @@ If you find this bootloader configuration useful, consider giving it a star to m
 | macOS Big Sur  | 11.2.2 (20D80) |
 | macOS Monterey | 12.6.1 (21G217)|
 | macOS Ventura  | 13.5.1 (22G90) |
-| MacOS Sonoma   | 14.0 (23A344)  |
+| MacOS Sonoma   | 14.2.1 (23C71) |
 
 </details>
 
@@ -83,7 +83,7 @@ If you find this bootloader configuration useful, consider giving it a star to m
 | Kext                   | Comment        
 |:---------------------- | ------------------------------
 | AirportItlwm           | Latest(Intel cards only)         
-| AppleALC               | Latest Speakers
+| AppleALC               | Latest Speaker drivers
 | BrightnessKeys         | Latest         
 | CPUFriend              | Latest CPU power management
 | CPUFriendDataProvider  | Latest i5-8350U
@@ -100,7 +100,7 @@ If you find this bootloader configuration useful, consider giving it a star to m
 | VoltageShift           | Disabled, 1.22 
 | VoodooPS2Controller    | Latest         
 | VoodooRMI              | Latest         
-| VoodooI2C              | Latest Touchscreen
+| VoodooI2C              | Latest Touchscreen drivers
 | VooDooI2CHID           | Latest Intel satellite kext
 | VoodooSMBus            | Latest         
 | WhateverGreen          | Latest         
@@ -114,10 +114,10 @@ If you find this bootloader configuration useful, consider giving it a star to m
 
 | Driver          | Version           |
 |:---------------:| ----------------- |
-| AudioDxe.efi    | OpenCorePkg 0.9.4 |
+| AudioDxe.efi    | OpenCorePkg 0.9.8 |
 | HfsPlus.efi     | OcBinaryData      |
-| OpenCanopy.efi  | OpenCorePkg 0.9.4 |
-| OpenRuntime.efi | OpenCorePkg 0.9.4 |
+| OpenCanopy.efi  | OpenCorePkg 0.9.8 |
+| OpenRuntime.efi | OpenCorePkg 0.9.8 |
 </details>
 
 <details>
@@ -145,6 +145,7 @@ If you find this bootloader configuration useful, consider giving it a star to m
 - `Anti-Theft -> Computrace -> Current Setting` **Disabled**
 - `Secure Boot -> Secure Boot` **Disabled**
 - `Intel SGX -> Intel SGX Control` **Disabled**
+- `I/O Port Access -> Thunderbolt` **Disabled**
 - `Device Guard` **Disabled**
 
 **Startup**
