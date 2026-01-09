@@ -1,6 +1,6 @@
 # T480-OpenCore-Hackintosh
 
-**Status: Maintained**
+**Status: NOT maintained - Moved to linux on another laptop**
 
 Supported OS's: Cataline, Big Sur, Monterey, Ventura, Sonoma
 
